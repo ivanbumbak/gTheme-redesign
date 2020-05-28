@@ -7,3 +7,12 @@ Licence URI: ;
 Version: 1.0.
 Description: Personalized Wordpress theme for a local IT company.
 */
+
+@import "constants";
+@import "mixins";
+
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $main-color-font;
+}

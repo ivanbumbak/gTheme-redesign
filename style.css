@@ -7,7 +7,57 @@ Licence URI: ;
 Version: 1.0.
 Description: Personalized Wordpress theme for a local IT company.
 */
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #333; }
+body, html {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin: 0; }
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+/* Header */
+header.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2); }
+  header.site-header img {
+    margin: 25px; }
+
+/* Navigation menu */
+.main-nav ul {
+  margin: 0;
+  padding: 0; }
+
+.main-nav li {
+  list-style: none;
+  float: left;
+  padding: 0 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase; }
+  .main-nav li:hover {
+    background-color: #fafafa;
+    border-bottom: 2px solid #9e0500; }
+  .main-nav li.current-menu-item {
+    border-bottom: 2px solid #9e0500; }
+
+.main-nav a {
+  display: block;
+  padding: 30px 10px;
+  color: #1a1a1a;
+  border-bottom: 2px solid transparent; }
+
+/* Footer */
+footer.site-footer {
+  width: 100%;
+  background-color: #333;
+  padding: 15px; }
+  footer.site-footer p {
+    color: #fefefe; }

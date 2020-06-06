@@ -11,8 +11,73 @@ Description: Personalized Wordpress theme for a local IT company.
 @import "constants";
 @import "mixins";
 
-body {
-    font-family: $main-font;
-    font-size: 14px;
-    color: $main-color-font;
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Header */
+header.site-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
+
+    img {
+        margin: 25px;
+    }
+}
+
+/* Navigation menu */
+.main-nav {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        padding: 0 10px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        &:hover {
+            background-color: #fafafa;
+            border-bottom: 2px solid #9e0500;
+        }
+        &.current-menu-item {
+            border-bottom: 2px solid #9e0500;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 30px 10px;
+        color: $menu-links-color;
+        border-bottom: 2px solid transparent;
+    }
+}
+
+/* Footer */
+footer.site-footer {
+    width: 100%;
+    background-color: $footer-background-color;
+    padding: 15px;
+
+    p {
+        color: $footer-text-color;
+    }
 }

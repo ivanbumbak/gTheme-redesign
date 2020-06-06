@@ -11,6 +11,13 @@
 <body <?php body_class(); ?>>
     <!-- site-header -->
     <header class="site-header">
-        <h1><a href="<?php echo home_url(); ?>"></a><?php bloginfo('name'); ?></h1>
-        <h5><?php bloginfo('description'); ?></h5>
+        <img src="https://via.placeholder.com/200x35" alt="Logo">
+
+        <nav class="main-nav">
+            <?php $args = array(
+                'theme_location' => 'primary'
+            ); ?>
+
+            <?php wp_nav_menu($args); ?>
+        </nav>
     </header>

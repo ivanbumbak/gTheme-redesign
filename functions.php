@@ -5,5 +5,9 @@ function gTheme_resources() {
 }
 add_action('wp_enqueue_scripts', 'gTheme_resources');
 
+//Navigation menus
+register_nav_menus(array(
+    'primary' => __('Main Menu'),
+));
 
 ?>

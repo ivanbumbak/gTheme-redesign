@@ -7,17 +7,40 @@ Licence URI: ;
 Version: 1.0.
 Description: Personalized Wordpress theme for a local IT company.
 */
+/* General layout */
 body, html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #f1f1f1; }
 
-h1 {
-  margin: 0; }
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  color: #333; }
+
+p {
+  color: #333; }
 
 a {
   margin: 0;
   padding: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #d30c09dc; }
+  a:visited {
+    color: #d30c09dc; }
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0; }
+  .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif; }
+  .content h2, .content h3, .content h4, .content h5 {
+    font-family: "Montserrat", sans-serif; }
+  .content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
 
 /* Header */
 header.site-header {
@@ -26,7 +49,7 @@ header.site-header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2); }
+  background-color: #fafafa; }
   header.site-header img {
     margin: 25px; }
 
@@ -41,12 +64,13 @@ header.site-header {
   padding: 0 10px;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent; }
   .main-nav li:hover {
-    background-color: #fafafa;
-    border-bottom: 2px solid #9e0500; }
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #850200; }
   .main-nav li.current-menu-item {
-    border-bottom: 2px solid #9e0500; }
+    border-bottom: 2px solid #850200; }
 
 .main-nav a {
   display: block;
@@ -54,9 +78,54 @@ header.site-header {
   color: #1a1a1a;
   border-bottom: 2px solid transparent; }
 
+/* Front Page Layout */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  height: 75vh; }
+
+.section-news {
+  max-width: 100%;
+  padding: 10px;
+  background-color: #fafafa; }
+
+.recent-news {
+  border-left: 4px solid #d30c09dc;
+  margin: 20px 0;
+  padding-left: 10px; }
+  .recent-news p.post-info {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin: 0; }
+
+/* Page Layout */
+article.content {
+  border-bottom: 2px solid #d30c09dc; }
+  article.content:last-of-type {
+    border-bottom: none; }
+
+article.page-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  padding-top: 10px;
+  color: #850200; }
+
+article.page-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+article.page-content p.post-info {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin: 0; }
+
 /* Footer */
 footer.site-footer {
-  width: 100%;
   background-color: #333;
   padding: 15px; }
   footer.site-footer p {

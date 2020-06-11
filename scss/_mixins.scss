@@ -1,2 +1,11 @@
 // _mixins.scss
 @import "constants";
+
+@mixin post-info {
+    p.post-info {
+        font-size: 13px;
+        font-weight: 600;
+        color: $main-color-font;
+        margin: 0;
+    }
+}

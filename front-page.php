@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content">
+<div class="container">
     <div class="hero">
         <div class="section-main">
             <p>Some hardcoding text goes here!</p>
@@ -9,7 +9,6 @@
 </div>
 
 <div class="section-news">
-    <div class="content">
     <h1>Novosti</h1>
 
     <?php 
@@ -19,28 +18,30 @@
         if ($news -> have_posts()) :
             while ($news -> have_posts()) : $news -> the_post(); ?>
 
-            <article class="recent-news">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <p class="post-info">
-                <?php the_time('j. F, Y'); ?> &bull; Od: <?php the_author(); ?> &bull; Kategorija:
-                
-                <?php 
-                
-                $categories = get_the_category();
-                $output = '';
+            <div class="container">
+                <article class="recent-post">
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p class="post-info">
+                    <?php the_time('j. F, Y'); ?> &bull; <?php the_author(); ?> &bull;
+                    
+                    <?php 
+                    
+                    $categories = get_the_category();
+                    $output = '';
 
-                if ($categories) {
-                    foreach ($categories as $category) {
-                        $output .= '<a href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>';
+                    if ($categories) {
+                        foreach ($categories as $category) {
+                            $output .= '<a href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>';
+                        }
+
+                        echo $output;
                     }
-
-                    echo $output;
-                }
-                
-                ?>
-            </p>
-                <p><?php the_excerpt(); ?></p>
-            </article>
+                    
+                    ?>
+                </p>
+                    <p><?php the_excerpt(); ?></p>
+                </article>
+            </div>
 
             <?php endwhile;
             
@@ -50,7 +51,7 @@
             endif; 
             wp_reset_postdata(); 
     ?>
-    </div>
+    
 </div>
 
 <?php get_footer(); ?>

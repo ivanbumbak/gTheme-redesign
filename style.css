@@ -9,6 +9,9 @@ Description: Personalized Wordpress theme for a local IT company.
 */
 /* General layout */
 body, html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #f1f1f1; }
@@ -28,19 +31,12 @@ a {
   a:visited {
     color: #d30c09dc; }
 
-.content {
-  max-width: 1280px;
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0; }
-  .content h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif; }
-  .content h2, .content h3, .content h4, .content h5 {
-    font-family: "Montserrat", sans-serif; }
-  .content p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px; }
 
 /* Header */
 header.site-header {
@@ -48,6 +44,7 @@ header.site-header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 100%;
   background-color: #fafafa; }
   header.site-header img {
@@ -88,26 +85,29 @@ header.site-header {
   height: 75vh; }
 
 .section-news {
-  max-width: 100%;
   padding: 10px;
   background-color: #fafafa; }
+  .section-news h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif; }
+  .section-news h2, .section-news h3, .section-news h4, .section-news h5 {
+    font-family: "Montserrat", sans-serif; }
+  .section-news p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
 
-.recent-news {
+.recent-post {
   border-left: 4px solid #d30c09dc;
   margin: 20px 0;
   padding-left: 10px; }
-  .recent-news p.post-info {
+  .recent-post p.post-info {
     font-size: 13px;
     font-weight: 600;
     color: #333;
     margin: 0; }
 
 /* Page Layout */
-article.content {
-  border-bottom: 2px solid #d30c09dc; }
-  article.content:last-of-type {
-    border-bottom: none; }
-
 article.page-content h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
@@ -126,7 +126,33 @@ article.page-content p.post-info {
 
 /* Footer */
 footer.site-footer {
-  background-color: #333;
-  padding: 15px; }
-  footer.site-footer p {
+  display: flex;
+  flex-shrink: 0;
+  background-color: #686868;
+  width: 100%;
+  height: 150px; }
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px; }
+
+.footer-half {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%; }
+  .footer-half h5 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
     color: #fefefe; }
+  .footer-half p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #fefefe;
+    margin: 0; }

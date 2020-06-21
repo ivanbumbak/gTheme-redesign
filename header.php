@@ -10,8 +10,13 @@
     </head>
 <body <?php body_class(); ?>>
     <!-- site-header -->
-    <header class="site-header">
-        <img src="https://via.placeholder.com/200x35" alt="Logo">
+    <header class="<?php 
+        if (is_front_page()) :
+            echo 'home-header';
+        else : 
+            echo 'page-header';
+        endif; ?>">
+    <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Logo"></a>
 
         <nav class="main-nav">
             <?php $args = array(

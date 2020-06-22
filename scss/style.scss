@@ -12,14 +12,14 @@ Description: Personalized Wordpress theme for a local IT company.
 @import "mixins";
 
 /* General layout */
-
 body, html {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #fefefe;
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
+    font-family: $main-font;
     color: $main-color-font;
     margin: 0;
 }
@@ -53,14 +54,12 @@ a {
 
 /* Header */
 header.home-header, header.page-header {
-    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-shrink: 0;
-    width: 65%;
-    // background-color: #fafafa;
+    width: 100%;
     img {
         margin-right: 15px;
     }
@@ -68,9 +67,8 @@ header.home-header, header.page-header {
 
 header.page-header {
     position: initial;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     background-color: #fafafa;
-    width: 100%;
 }
 
 /* Navigation menu */
@@ -85,7 +83,7 @@ header.page-header {
         float: left;
         padding: 0 10px;
         font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $main-font;
         text-transform: uppercase;
         &:hover {
             font-weight: 600;
@@ -110,18 +108,10 @@ header.page-header {
     align-items: flex-start;
     justify-content: space-between;
     background-color: #f1f1f1;
-    height: 100vh;
-}
-
-.section-main {
-    display: flex;
-    width: 65%;
-    height: 100%;
-    background-color: #fff;
 
     p {
         font-family: $heading-font;
-        font-size: 45px;
+        font-size: 30px;
         font-weight: 800;
         padding-bottom: 10px;
     }
@@ -132,65 +122,36 @@ header.page-header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    max-width: 980px;
-    margin: 150px auto 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 80vh;
 }
 
-.section-image {
-    background-image: url('./img/hero-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 35%;
-    height: 100%;
-}
-
-.news {
-    h1 {
-        text-transform: uppercase;
-        font-family: $heading-font;
-        font-size: 35px;
-    }
-
-    h2, h3, h4, h5 {
-        font-family: $heading-font;
-    }
-
-    p {
-        font-family: $main-font;
-        font-size: 19px;
-        font-weight: 300;
-    }
-
-    a {
-        font-family: $main-font;
-        font-size: 19px;
-    }
-}
-
-/* .section-news {
-    padding: 10px;
+.section-news {
     background-color: #fafafa;
 
     h1 {
         text-align: center;
         text-transform: uppercase;
-        font-family: $heading-font;
+        font-size: 3em;
+        margin: 35px 0;
     }
+}
 
-    h2, h3, h4, h5 {
-        font-family: $heading-font;
-    }
-
-    p {
-        font-family: $main-font;
-        font-size: 14px;
-    }
-} */
+.articles {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 .recent-post {
-    border-left: 4px solid #d30c09dc;
-    margin: 20px 0;
-    padding-left: 10px;
+    border-top: 4px solid #d30c09dc;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2);
 
     @include post-info;
 }
@@ -198,15 +159,13 @@ header.page-header {
 /* Page Layout */
 article.page-content {
     h2 {
-        font-family: $heading-font;
         font-size: 21px;
         padding-top: 10px;
         color: $highlight-color-font;
     }
 
     p {
-        font-family: $main-font;
-        font-size: 16px;
+        font-size: 19px;
     }
 
     @include post-info;
@@ -239,13 +198,11 @@ footer.site-footer {
     height: 100%;
 
     h5 {
-        font-family: $heading-font;
         text-transform: uppercase;
         color: $footer-text-color;
     }
 
     p {
-        font-family: $main-font;
         font-size: 14px;
         color: $footer-text-color;
         margin: 0;

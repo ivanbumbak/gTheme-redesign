@@ -14,7 +14,8 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1; }
+  background-color: #fefefe;
+  background-attachment: fixed; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
@@ -22,6 +23,7 @@ h1, h2, h3, h4, h5 {
   margin: 0; }
 
 p {
+  font-family: "Open Sans", sans-serif;
   color: #333;
   margin: 0; }
 
@@ -42,21 +44,19 @@ a {
 
 /* Header */
 header.home-header, header.page-header {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-shrink: 0;
-  width: 65%; }
+  width: 100%; }
   header.home-header img, header.page-header img {
     margin-right: 15px; }
 
 header.page-header {
   position: initial;
-  justify-content: flex-start;
-  background-color: #fafafa;
-  width: 100%; }
+  justify-content: space-evenly;
+  background-color: #fafafa; }
 
 /* Navigation menu */
 .main-nav ul {
@@ -68,7 +68,7 @@ header.page-header {
   float: left;
   padding: 0 10px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase; }
   .main-nav li:hover {
     font-weight: 600; }
@@ -87,17 +87,10 @@ header.page-header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: #f1f1f1;
-  height: 100vh; }
-
-.section-main {
-  display: flex;
-  width: 65%;
-  height: 100%;
-  background-color: #fff; }
-  .section-main p {
+  background-color: #f1f1f1; }
+  .hero p {
     font-family: "Montserrat", sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 800;
     padding-bottom: 10px; }
 
@@ -106,84 +99,59 @@ header.page-header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  max-width: 980px;
-  margin: 150px auto 0 auto; }
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 80vh; }
 
-.section-image {
-  background-image: url("./img/hero-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 35%;
-  height: 100%; }
+.section-news {
+  background-color: #fafafa; }
+  .section-news h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 35px 0; }
 
-.news h1 {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px; }
+.articles {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  margin: 0 auto; }
 
-.news h2, .news h3, .news h4, .news h5 {
-  font-family: "Montserrat", sans-serif; }
-
-.news p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 19px;
-  font-weight: 300; }
-
-.news a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 19px; }
-
-/* .section-news {
-    padding: 10px;
-    background-color: #fafafa;
-
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $heading-font;
-    }
-
-    h2, h3, h4, h5 {
-        font-family: $heading-font;
-    }
-
-    p {
-        font-family: $main-font;
-        font-size: 14px;
-    }
-} */
 .recent-post {
-  border-left: 4px solid #d30c09dc;
-  margin: 20px 0;
-  padding-left: 10px; }
+  border-top: 4px solid #d30c09dc;
+  margin: 0 30px 30px 30px;
+  padding: 20px;
+  width: 30%;
+  height: 300px;
+  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
   .recent-post p.post-info {
     font-size: 13px;
     font-weight: 600;
     color: #333;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 15px; }
 
 /* Page Layout */
 article.page-content h2 {
-  font-family: "Montserrat", sans-serif;
   font-size: 21px;
   padding-top: 10px;
   color: #850200; }
 
 article.page-content p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
+  font-size: 19px; }
 
 article.page-content p.post-info {
   font-size: 13px;
   font-weight: 600;
   color: #333;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 15px; }
 
 /* Footer */
 footer.site-footer {
   display: flex;
   flex-shrink: 0;
-  background-color: #686868;
+  background-color: #e9dfdf;
   width: 100%;
   height: 150px; }
 
@@ -203,11 +171,9 @@ footer.site-footer {
   width: 50%;
   height: 100%; }
   .footer-half h5 {
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    color: #fefefe; }
+    color: #1a1a1a; }
   .footer-half p {
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    color: #fefefe;
+    color: #1a1a1a;
     margin: 0; }

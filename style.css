@@ -38,7 +38,7 @@ a {
 .container {
   flex: 1;
   width: 100%;
-  max-width: 940px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0; }
 
@@ -50,8 +50,6 @@ header.home-header, header.page-header {
   justify-content: space-around;
   flex-shrink: 0;
   width: 100%; }
-  header.home-header img, header.page-header img {
-    margin-right: 15px; }
 
 header.page-header {
   position: initial;
@@ -119,7 +117,7 @@ header.page-header {
 
 .recent-post {
   border-top: 4px solid #d30c09dc;
-  margin: 0 30px 30px 30px;
+  margin: 0 30px 50px 30px;
   padding: 20px;
   width: 30%;
   height: 300px;
@@ -130,6 +128,55 @@ header.page-header {
     color: #333;
     margin: 0;
     padding-bottom: 15px; }
+
+.section-nutshell {
+  padding: 50px 0;
+  background-color: #f1f1f1; }
+
+.wrapper-nutshell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+
+.nutshell-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: #f1f1f1; }
+  .nutshell-icon i {
+    font-size: 4em; }
+
+.nutshell-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 500px;
+  margin: 30px;
+  background-color: #fefefe;
+  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
+  .nutshell-third p {
+    padding: 0 15px;
+    font-size: 17px; }
+  .nutshell-third a {
+    border: 1px solid #d30c09dc;
+    border-radius: 5%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #d30c09dc; }
+    .nutshell-third a:hover {
+      color: #fefefe;
+      background-color: #d30c09dc; }
 
 /* Page Layout */
 article.page-content h2 {
@@ -146,6 +193,27 @@ article.page-content p.post-info {
   color: #333;
   margin: 0;
   padding-bottom: 15px; }
+
+/* Special page layouts */
+.portfolio {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 100%; }
+
+.about-us {
+  width: 100%; }
+  .about-us p {
+    font-size: 19px; }
+
+.about-us-background {
+  max-width: 100%;
+  height: 275px;
+  background-image: url("./img/hero-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /* Footer */
 footer.site-footer {

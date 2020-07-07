@@ -58,6 +58,7 @@
     <div class="container">
         <div class="wrapper-nutshell">
             <div class="nutshell-third">
+                <h4>Tko smo?</h4>
                 <div class="nutshell-icon">
                     <i class="fas fa-user"></i>
                 </div>
@@ -68,6 +69,7 @@
             </div>
 
             <div class="nutshell-third">
+                <h4>Što radimo?</h4>
                 <div class="nutshell-icon">
                     <i class="fas fa-cog"></i>
                 </div>
@@ -77,6 +79,7 @@
             </div>
 
             <div class="nutshell-third">
+                <h4>Gdje smo?</h4>
                 <div class="nutshell-icon">
                     <i class="fas fa-building"></i>
                 </div>

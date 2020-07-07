@@ -1,22 +1,71 @@
 <?php
 
-get_header();
+get_header(); ?>
 
-if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+<div class="container">
+    <div class="wrapper-partners">
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
 
-    <article class="container page-content">
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-    </article>
+        <div class="section-quarter-partners">
+            <a href="">Corona Copy d.o.o.</a>
+            <p>Cesta Dr. Franje Tuđmana 332, 21212 Kaštel Sućurac</p>
+        </div>
 
-    <?php endwhile;
+        <div class="section-quarter-partners">
+            <a href="">Frigo d.o.o.</a>
+            <p>Sunekova 182 Dubrava, 10040 ZAGREB</p>
+        </div>
 
-else :
-    echo '<p>No content found</p>';
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
 
-endif;
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
 
-get_footer();
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+
+        <div class="section-quarter-partners">
+            <a href="">Gastrobit Grc Grupa d.o.o.</a>
+            <p>Zagrebačka 145b, 10370 Dugo Selo (Zagreb)</p>
+        </div>
+    </div>
+</div>
+
+<?php get_footer();
 
 ?>

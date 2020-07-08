@@ -65,13 +65,16 @@ header.page-header {
   list-style: none;
   float: left;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent; }
   .main-nav li:hover {
-    font-weight: 600; }
+    border-bottom: 2px solid #d30c09dc;
+    background-color: #f1f1f1; }
   .main-nav li.current-menu-item {
-    font-weight: 600; }
+    border-bottom: 2px solid #d30c09dc;
+    background: #f1f1f1; }
 
 .main-nav a {
   content: '';
@@ -229,6 +232,7 @@ article.page-content p.post-info {
 
 .section-quarter-partners {
   width: 21%;
+  height: 100px;
   border-top: 2px solid #1a1a1a;
   margin: 50px 5px;
   text-align: center;

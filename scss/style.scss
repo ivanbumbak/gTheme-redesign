@@ -18,7 +18,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fefefe;
+    background-color: #fafafa;
     background-attachment: fixed;
 }
 
@@ -36,11 +36,11 @@ p {
 
 a {
     text-decoration: none;
-    color: #d30c09dc;
+    color: $link-color;
     margin: 0;
     padding: 0;
     &:visited {
-        color: #d30c09dc;
+        color: $link-color;
     }
 }
 
@@ -65,7 +65,7 @@ header.home-header, header.page-header {
 header.page-header {
     position: initial;
     justify-content: space-evenly;
-    background-color: #fafafa;
+    background-color: #fefefe;
 }
 
 /* Navigation menu */
@@ -84,11 +84,11 @@ header.page-header {
         text-transform: uppercase;
         border-bottom: 2px solid transparent;
         &:hover {
-            border-bottom: 2px solid #d30c09dc;
+            border-bottom: 2px solid $link-color;
             background-color: #f1f1f1;
         }
         &.current-menu-item {
-            border-bottom: 2px solid #d30c09dc;
+            border-bottom: 2px solid $link-color;
             background: #f1f1f1;
         }
     }
@@ -146,7 +146,7 @@ header.page-header {
 }
 
 .recent-post {
-    border-top: 4px solid #d30c09dc;
+    border-top: 4px solid $link-color;
     margin: 0 30px 50px 30px;
     padding: 20px;
     width: 30%;
@@ -193,6 +193,7 @@ header.page-header {
     height: 500px;
     margin: 30px;
     background-color: #fefefe;
+    border-top: 4px solid #1a1a1a;
     box-shadow:  $box-shadow;
 
     h4 {
@@ -207,16 +208,16 @@ header.page-header {
     }
 
     a {
-        border: 1px solid #d30c09dc;
+        border: 1px solid $link-color;
         border-radius: 5%;
         font-family: $main-font;
         font-size: 16px;
         margin-bottom: 10px;
         padding: 7px;
-        color: #d30c09dc;
+        color: $link-color;
         &:hover {
             color: #fefefe;
-            background-color: #d30c09dc;
+            background-color: $link-color;
         }
     }
 }
@@ -278,11 +279,12 @@ article.page-content {
     border-top: 2px solid #1a1a1a;
     margin: 50px 5px;
     text-align: center;
+    background-color: #fefefe;
     box-shadow: $box-shadow;
 
     a {
         display: block;
-        color: #d30c09dc;
+        color: $link-color;
         font-family: $heading-font;
         font-size: 18px;
         padding: 10px;

@@ -14,7 +14,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  background-color: #fafafa;
   background-attachment: fixed; }
 
 h1, h2, h3, h4, h5 {
@@ -54,7 +54,7 @@ header.home-header, header.page-header {
 header.page-header {
   position: initial;
   justify-content: space-evenly;
-  background-color: #fafafa; }
+  background-color: #fefefe; }
 
 /* Navigation menu */
 .main-nav ul {
@@ -164,6 +164,7 @@ header.page-header {
   height: 500px;
   margin: 30px;
   background-color: #fefefe;
+  border-top: 4px solid #1a1a1a;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
   .nutshell-third h4 {
     margin-top: 20px;
@@ -236,6 +237,7 @@ article.page-content p.post-info {
   border-top: 2px solid #1a1a1a;
   margin: 50px 5px;
   text-align: center;
+  background-color: #fefefe;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
   .section-quarter-partners a {
     display: block;

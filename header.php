@@ -16,7 +16,7 @@
         else : 
             echo 'page-header';
         endif; ?>">
-    <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Logo"></a>
+    <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php bloginfo('template_url'); ?>/img/header-logo.png" alt="Logo"></a>
 
         <nav class="main-nav">
             <?php $args = array(

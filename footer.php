@@ -2,7 +2,8 @@
             <div class="footer-wrapper">
                 <!-- Section half footer -->
                 <section class="footer-half">
-                    <img src="https://via.placeholder.com/225" alt="Logo">
+                    <img src="<?php bloginfo('template_url'); ?>/img/footer-logo.png" alt="Logo">
+                    <!-- <img src="https://via.placeholder.com/240" alt="Logo"> -->
 
                     <div class="footer-info">
                         <h1>Šibenik</h1>

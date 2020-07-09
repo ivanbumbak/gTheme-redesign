@@ -241,21 +241,29 @@ article.page-content {
 .portfolio {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row-reverse;
     max-width: 100%;
 }
 
 .about-us {
-    width: 100%;
+    width: 35%;
+    padding: 50px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 31px !important;
+        padding: 15px 0;
+    }
 
     p {
-        font-size: 19px;
+        font-size: 18px;
+        line-height: 1.5;
     }
 }
 
 .about-us-background {
-    max-width: 100%;
-    height: 275px;
+    width: 55%;
+    height: 100%;
     background-image: url('./img/hero-background.png');
     background-attachment: fixed;
     background-position: center;

@@ -209,7 +209,7 @@ article.page-content p.post-info {
   max-width: 100%; }
 
 .about-us {
-  width: 35%;
+  width: 30%;
   padding: 50px;
   margin: 0 auto; }
   .about-us h2 {
@@ -220,10 +220,9 @@ article.page-content p.post-info {
     line-height: 1.5; }
 
 .about-us-background {
-  width: 55%;
+  width: 45%;
   height: 100%;
   background-image: url("./img/hero-background.png");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -261,29 +260,46 @@ article.page-content p.post-info {
 footer.site-footer {
   display: flex;
   flex-shrink: 0;
-  background-color: #e9dfdf;
+  background-color: #bebebea8;
   width: 100%;
-  height: 150px; }
+  height: 300px; }
 
 .footer-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 940px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 30px; }
 
 .footer-half {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  flex-direction: row;
   height: 100%; }
-  .footer-half h5 {
+  .footer-half h1 {
     text-transform: uppercase;
-    color: #1a1a1a; }
-  .footer-half p {
-    font-size: 14px;
+    font-size: 24px;
     color: #1a1a1a;
-    margin: 0; }
+    padding: 0px 0px 10px 25px; }
+  .footer-half p {
+    font-size: 18px;
+    color: #1a1a1a;
+    padding: 0px 0px 7px 25px; }
+  .footer-half i {
+    padding: 0px 10px 7px 0; }
+
+.footer-cc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #bebebe; }
+  .footer-cc p {
+    padding: 30px 0 20px 35px;
+    color: #1a1a1a; }
+  .footer-cc i {
+    padding: 30px 35px 20px 0;
+    font-size: 30px; }

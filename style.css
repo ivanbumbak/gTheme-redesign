@@ -256,6 +256,10 @@ article.page-content p.post-info {
     font-size: 16px;
     padding: 0px 15px 15px 15px; }
 
+/* Form template layout */
+.contact-form {
+  max-width: 15%; }
+
 /* Footer */
 footer.site-footer {
   display: flex;

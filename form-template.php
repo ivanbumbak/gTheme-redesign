@@ -72,7 +72,7 @@ get_header(); ?>
     <article class="form-article">
         <?php echo $response; ?>
         <form class="contact-form" action="<?php the_permalink(); ?>" method="post">
-            <input required value="<?php echo isset($_POST['name'])? $_POST['name'] : "" ?>" name="name" type="text" placeholder="Unesite ime poduzeća ili Vaše ime i prezime">
+            <input required value="<?php echo isset($_POST['name'])? $_POST['name'] : "" ?>" name="name" type="text" title="Molimo popunite ovo polje" placeholder="Unesite ime poduzeća ili Vaše ime i prezime">
             <input required value="<?php echo isset($_POST['telefon'])? $_POST['telefon'] : "" ?>" name="telefon" type="text" placeholder="Kontakt telefon">
             <input required value="<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>" name="email" type="email" placeholder="Kontakt email">
             <input required value="<?php echo isset($_POST['question'])? $_POST['question'] : "" ?>" name="question" type="text" placeholder="Unesite Vaš upit">

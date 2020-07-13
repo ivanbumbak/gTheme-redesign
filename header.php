@@ -16,13 +16,15 @@
         else : 
             echo 'page-header';
         endif; ?>">
-    <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php bloginfo('template_url'); ?>/img/header-logo.png" alt="Logo"></a>
+        <div class="header-wrapper">
+            <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php bloginfo('template_url'); ?>/img/header-logo.png" alt="Logo"></a>
 
-        <nav class="main-nav">
-            <?php $args = array(
-                'theme_location' => 'primary'
-            ); ?>
+            <nav class="main-nav">
+                <?php $args = array(
+                    'theme_location' => 'primary'
+                ); ?>
 
-            <?php wp_nav_menu($args); ?>
-        </nav>
+                <?php wp_nav_menu($args); ?>
+            </nav>
+        </div>
     </header>

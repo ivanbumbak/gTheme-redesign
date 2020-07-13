@@ -55,17 +55,22 @@ a {
 /* Header */
 header.home-header, header.page-header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     flex-shrink: 0;
     width: 100%;
 }
 
 header.page-header {
     position: initial;
-    justify-content: space-evenly;
     background-color: #fefefe;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Navigation menu */
@@ -307,8 +312,51 @@ article.page-content {
 }
 
 /* Form template layout */
+.form-article {
+    h2 {
+        margin-top: 25px;
+    }
+}
+
 .contact-form {
-    max-width: 15%;
+    max-width: 28%;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+    font-family: $main-font;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    &:hover {
+        border: 1px solid #1a1a1a;
+    }
+}
+
+.contact-form input[type=submit] {
+    font-family: $main-font;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $link-color;
+    background-color: #fefefe;
+    color: $link-color;
+    &:hover {
+        background-color: $link-color;
+        color: #fefefe;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.contact-form textarea {
+    resize: none;
 }
 
 /* Footer */
@@ -328,7 +376,7 @@ footer.site-footer {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 35px 30px 15px 30px;
+    padding: 35px 30px 15px 0px;
 }
 
 .footer-half {

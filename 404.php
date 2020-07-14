@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="wrapper-error404">
             <h1>404</h1>
             <i class="fas fa-unlink"></i>
-            <p>Ups! Izgleda da smo zalutali. Nalazite se na pogrešnom linuk.</p>
+            <p>Ups! Izgleda da smo zalutali. Nalazite se na pogrešnoj poveznici.</p>
             <a href="<?php echo home_url(); ?>"><i class="far fa-arrow-alt-circle-left"></i>Povratak na početnu stranicu.</a>
         </div>
     </div>

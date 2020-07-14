@@ -311,6 +311,58 @@ article.page-content {
     }
 }
 
+.wrapper-thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    a {
+        font-size: 2em;
+        color: $link-color;
+    }
+}
+
+.wrapper-error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 35px;
+
+    h1 {
+        font-size: 8em;
+    }
+
+    p {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    a {
+        font-size: 24px;
+        font-family: $main-font;
+        &:hover {
+            border-bottom: 1px solid $link-color;
+        }
+    }
+
+    i.fa-unlink {
+        font-size: 6em;
+        padding: 25px 0;
+    }
+
+    i.fa-arrow-alt-circle-left {
+        padding-right: 5px;
+    }
+}
+
 /* Form template layout */
 .form-article {
     h2 {

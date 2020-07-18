@@ -270,7 +270,14 @@ article.page-content p.post-info {
     font-size: 3em; }
   .wrapper-thank-you a {
     font-size: 2em;
-    color: #d30c09dc; }
+    color: #d30c09dc;
+    padding-top: 5px; }
+  .wrapper-thank-you i.fa-link {
+    font-size: 4em; }
+  .wrapper-thank-you i.fa-check-circle {
+    font-size: 6em;
+    color: #333333;
+    padding: 25px 0; }
 
 .wrapper-error404 {
   display: flex;

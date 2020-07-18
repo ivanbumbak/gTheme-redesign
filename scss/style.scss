@@ -325,6 +325,17 @@ article.page-content {
     a {
         font-size: 2em;
         color: $link-color;
+        padding-top: 5px;
+    }
+
+    i.fa-link {
+        font-size: 4em;
+    }
+
+    i.fa-check-circle {
+        font-size: 6em;
+        color: #333333;
+        padding: 25px 0;
     }
 }
 

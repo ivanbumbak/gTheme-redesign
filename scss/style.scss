@@ -159,6 +159,13 @@ header.page-header {
     box-shadow: $box-shadow;
 
     @include post-info;
+
+    h2 {
+        font-weight: 300;
+        &:hover {
+            font-weight: 600;
+        }
+    }
 }
 
 .section-nutshell {
@@ -482,4 +489,9 @@ footer.site-footer {
         padding: 30px 35px 20px 0;
         font-size: 30px;
     }
+}
+
+#map {
+    width: 500px;
+    height: 200px;
 }

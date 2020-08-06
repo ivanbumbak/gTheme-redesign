@@ -16,7 +16,7 @@
 
                 <!-- Section half footer -->
                 <section class="footer-half">
-                    <h5>Radno vrijeme poduzeća</h5>
+                    <div id="map"></div>
                 </section>
             </div>
         </footer>
@@ -28,5 +28,7 @@
         </div>
 
         <?php wp_footer(); ?>
+
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_fvo1MpSXnvxd9uSnHuV-szUzneljZ7o&callback=mapLocation"></script>
     </body>
 </html>

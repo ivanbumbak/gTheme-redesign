@@ -29,6 +29,6 @@
 
         <?php wp_footer(); ?>
 
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_fvo1MpSXnvxd9uSnHuV-szUzneljZ7o&callback=mapLocation"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&callback=mapLocation"></script>
     </body>
 </html>

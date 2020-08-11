@@ -3,8 +3,9 @@
 <div class="hero">
     <div class="hero-wrapper">
         <div class="first-row">
-            <p id="fiskal">Fiskalne blagajne. Klimatizacija.<br>Uredska oprema.</p><br>
-            <p id="vaga">Ovlašteni servis i prodaja mjerila mase, vage i utega.</p>
+        <?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
+            <!-- <p id="fiskal">Fiskalne blagajne. Klimatizacija.<br>Uredska oprema.</p><br>
+            <p id="vaga">Ovlašteni servis i prodaja mjerila mase, vage i utega.</p> -->
         </div>
     </div>
 </div>

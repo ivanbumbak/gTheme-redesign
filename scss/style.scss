@@ -289,7 +289,6 @@ article.page-content {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin-top: 50px;
 }
 
 .section-quarter-partners {
@@ -315,6 +314,34 @@ article.page-content {
     p {
         font-size: 16px;
         padding: 0px 15px 15px 15px;
+    }
+}
+
+.wrapper-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.section-half-contact {
+    width: 40%;
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    i {
+        margin: 25px 30px 0 0;
+        font-size: 45px;
+    }
+
+    a {
+        color: $main-color-font;
+        @include unfade(ease-in);
+        &:hover {
+            color: $link-color;
+            @include fade(ease-in);
+        }
     }
 }
 
@@ -486,8 +513,17 @@ footer.site-footer {
     }
 
     i {
-        padding: 30px 35px 20px 0;
+        padding: 30px 20px 20px 0;
         font-size: 30px;
+    }
+
+    a {
+        color: $main-color-font;
+        @include unfade(ease-in);
+        &:hover {
+            color: $link-color;
+            @include fade(ease-in);
+        }
     }
 }
 

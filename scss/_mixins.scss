@@ -1,6 +1,7 @@
 // _mixins.scss
 @import "constants";
 
+// Post date, category and author info
 @mixin post-info {
     p.post-info {
         font-size: 13px;
@@ -9,4 +10,28 @@
         margin: 0;
         padding-bottom: 15px;
     }
+}
+
+//Fade color on hover on social icons
+@mixin fade($fade) {
+    -webkit-transition: $fade;
+    -moz-transition: $fade;
+    -o-transition: $fade;
+    transition: $fade;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+//Unfade color on social icons
+@mixin unfade($unfade) {
+    -webkit-transition: $unfade;
+    -moz-transition: $unfade;
+    -o-transition: $unfade;
+    transition: $unfade;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }

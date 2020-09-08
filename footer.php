@@ -24,7 +24,10 @@
         <div class="footer-cc">
             <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Sva prava pridržana.</p>
 
-            <i class="fab fa-facebook"></i>
+            <div id="social-icons">
+                <a href="https://www.facebook.com/gambidoo" title="Facebook page" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram page" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
 
         <?php wp_footer(); ?>

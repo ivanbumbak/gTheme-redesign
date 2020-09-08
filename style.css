@@ -241,8 +241,7 @@ article.page-content p.post-info {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  margin-top: 50px; }
+  width: 100%; }
 
 .section-quarter-partners {
   width: 21%;
@@ -263,6 +262,39 @@ article.page-content p.post-info {
   .section-quarter-partners p {
     font-size: 16px;
     padding: 0px 15px 15px 15px; }
+
+.wrapper-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px; }
+
+.section-half-contact {
+  width: 40%; }
+  .section-half-contact h2 {
+    margin-top: 10px; }
+  .section-half-contact i {
+    margin: 25px 30px 0 0;
+    font-size: 45px; }
+  .section-half-contact a {
+    color: #333;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .section-half-contact a:hover {
+      color: #d30c09dc;
+      -webkit-transition: ease-in;
+      -moz-transition: ease-in;
+      -o-transition: ease-in;
+      transition: ease-in;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
 
 .wrapper-thank-you {
   display: flex;
@@ -390,8 +422,28 @@ footer.site-footer {
     padding: 30px 0 20px 35px;
     color: #1a1a1a; }
   .footer-cc i {
-    padding: 30px 35px 20px 0;
+    padding: 30px 20px 20px 0;
     font-size: 30px; }
+  .footer-cc a {
+    color: #333;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .footer-cc a:hover {
+      color: #d30c09dc;
+      -webkit-transition: ease-in;
+      -moz-transition: ease-in;
+      -o-transition: ease-in;
+      transition: ease-in;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
 
 #map {
   width: 500px;

@@ -2,27 +2,21 @@
 
 get_header(); ?>
 
-    <?php
+<div class="offer">
+    <div class="section-air-condition">
+        <h1>Ovlašteni instalateri</h1>
+        <h3>Gree, Mitshubishi i Vivax</h3>
+    </div>
 
-        get_header();
+    <div class="section-fiscal">
+        <h1>Fiskalne blagajne</h1>
+        <h3>Prijenosne, računala i touch ekrani</h3>
+    </div>
 
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
-
-            <article class="container page-content">
-                <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
-            </article>
-
-            <?php endwhile;
-
-        else :
-            echo '<p>No content found</p>';
-
-        endif;
-
-        get_footer();
-
-    ?>
+    <div class="section-beam-scale">
+        <h1>Vage i utezi</h1>
+        <h3>Servis i baždarenje</h3>
+    </div>
+</div>
 
 <?php get_footer(); ?>

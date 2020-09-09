@@ -216,6 +216,7 @@ article.page-content p.post-info {
   flex-direction: row-reverse;
   max-width: 100%; }
 
+/* Page About Us */
 .about-us {
   width: 30%;
   padding: 50px;
@@ -235,6 +236,65 @@ article.page-content p.post-info {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/* Page Offer */
+.section-air-condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/air.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-air-condition h1, .section-air-condition h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 72px; }
+  .section-air-condition h3 {
+    font-size: 60px; }
+
+.section-fiscal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/cafe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-fiscal h1, .section-fiscal h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 72px; }
+  .section-fiscal h3 {
+    font-size: 60px; }
+
+.section-beam-scale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/workshop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-beam-scale h1, .section-beam-scale h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 72px; }
+  .section-beam-scale h3 {
+    font-size: 60px; }
+
+/* Page Partners */
 .wrapper-partners {
   display: flex;
   flex-direction: row;
@@ -263,6 +323,7 @@ article.page-content p.post-info {
     font-size: 16px;
     padding: 0px 15px 15px 15px; }
 
+/* Page Contact */
 .wrapper-form {
   display: flex;
   flex-direction: row;
@@ -296,6 +357,7 @@ article.page-content p.post-info {
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
 
+/* Thank you page */
 .wrapper-thank-you {
   display: flex;
   flex-direction: column;
@@ -315,6 +377,7 @@ article.page-content p.post-info {
     color: #333333;
     padding: 25px 0; }
 
+/* Page 404 */
 .wrapper-error404 {
   display: flex;
   flex-direction: column;

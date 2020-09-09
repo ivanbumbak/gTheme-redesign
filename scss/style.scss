@@ -257,6 +257,7 @@ article.page-content {
     max-width: 100%;
 }
 
+/* Page About Us */
 .about-us {
     width: 30%;
     padding: 50px;
@@ -282,6 +283,80 @@ article.page-content {
     background-size: cover;
 }
 
+/* Page Offer */
+.section-air-condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/air.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+}
+
+.section-fiscal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/cafe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+}
+
+.section-beam-scale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/workshop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+}
+
+/* Page Partners */
 .wrapper-partners {
     display: flex;
     flex-direction: row;
@@ -317,6 +392,7 @@ article.page-content {
     }
 }
 
+/* Page Contact */
 .wrapper-form {
     display: flex;
     flex-direction: row;
@@ -345,6 +421,7 @@ article.page-content {
     }
 }
 
+/* Thank you page */
 .wrapper-thank-you {
     display: flex;
     flex-direction: column;
@@ -373,6 +450,7 @@ article.page-content {
     }
 }
 
+/* Page 404 */
 .wrapper-error404 {
     display: flex;
     flex-direction: column;

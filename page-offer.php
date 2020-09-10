@@ -5,7 +5,7 @@ get_header(); ?>
 <div class="offer">
     <div class="section-air-condition">
         <h1>Ovlašteni instalateri</h1>
-        <h3>Gree, Mitshubishi i Vivax</h3>
+        <h3>Gree, Mitsubishi i Vivax</h3>
     </div>
 
     <div class="section-fiscal">

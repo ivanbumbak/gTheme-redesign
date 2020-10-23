@@ -1,6 +1,17 @@
 @import "constants";
 @import "mixins";
 
+// Text Box on Slider
 div#n2-ss-2 .n2-ss-layers-container {
     margin: 0 250px !important;
+}
+
+// Fade Hover on Read more button for all slides
+div#n2-ss-2 .n2-font-502a7c6c4bdf52f375de6b9bdd548c3a-link a,
+div#n2-ss-2 .n2-font-2318d4088af496b010c77f4b1c842a96-link a,
+div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
+    @include unfade(ease-in);
+    &:hover {
+        @include fade(ease-in);
+    }
 }

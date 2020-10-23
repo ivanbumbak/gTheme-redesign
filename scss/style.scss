@@ -89,13 +89,15 @@ header.page-header {
         font-family: $main-font;
         text-transform: uppercase;
         border-bottom: 2px solid transparent;
+        @include unfade(ease-in);
         &:hover {
             border-bottom: 2px solid $link-color;
             background-color: #f1f1f1;
+            @include fade(ease-in);
         }
         &.current-menu-item {
             border-bottom: 2px solid $link-color;
-            background: #f1f1f1;
+            background-color: #f1f1f1;
         }
     }
 
@@ -198,6 +200,10 @@ header.page-header {
 }
 
 .nutshell-third {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-200px);
+    @include fade(ease-in);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,10 +234,17 @@ header.page-header {
         margin-bottom: 10px;
         padding: 7px;
         color: $link-color;
+        @include unfade(ease-in);
         &:hover {
             color: #fefefe;
             background-color: $link-color;
+            @include fade(ease-in);
         }
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -422,71 +435,6 @@ article.page-content {
     }
 }
 
-/* Thank you page */
-.wrapper-thank-you {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    h1 {
-        font-size: 3em;
-    }
-
-    a {
-        font-size: 2em;
-        color: $link-color;
-        padding-top: 5px;
-    }
-
-    i.fa-link {
-        font-size: 4em;
-    }
-
-    i.fa-check-circle {
-        font-size: 6em;
-        color: #333333;
-        padding: 25px 0;
-    }
-}
-
-/* Page 404 */
-.wrapper-error404 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 35px;
-
-    h1 {
-        font-size: 8em;
-    }
-
-    p {
-        font-size: 24px;
-        padding-top: 10px;
-    }
-
-    a {
-        font-size: 24px;
-        font-family: $main-font;
-        &:hover {
-            border-bottom: 1px solid $link-color;
-        }
-    }
-
-    i.fa-unlink {
-        font-size: 6em;
-        padding: 25px 0;
-    }
-
-    i.fa-arrow-alt-circle-left {
-        padding-right: 5px;
-    }
-}
-
 /* Form template layout */
 .form-article {
     h2 {
@@ -507,8 +455,10 @@ article.page-content {
     padding: 15px;
     border: 1px solid #bebebe;
     border-radius: 5px;
+    @include unfade(ease-in);
     &:hover {
         border: 1px solid #1a1a1a;
+        @include fade(ease-in);
     }
 }
 
@@ -521,9 +471,11 @@ article.page-content {
     border: 1px solid $link-color;
     background-color: #fefefe;
     color: $link-color;
+    @include unfade(ease-in);
     &:hover {
         background-color: $link-color;
         color: #fefefe;
+        @include fade(ease-in);
     }
 
     &:focus {
@@ -606,6 +558,72 @@ footer.site-footer {
     }
 }
 
+/* Thank you page */
+.wrapper-thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    a {
+        font-size: 2em;
+        color: $link-color;
+        padding-top: 5px;
+    }
+
+    i.fa-link {
+        font-size: 4em;
+    }
+
+    i.fa-check-circle {
+        font-size: 6em;
+        color: #333333;
+        padding: 25px 0;
+    }
+}
+
+/* Page 404 */
+.wrapper-error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 35px;
+
+    h1 {
+        font-size: 8em;
+    }
+
+    p {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    a {
+        font-size: 24px;
+        font-family: $main-font;
+        &:hover {
+            border-bottom: 1px solid $link-color;
+        }
+    }
+
+    i.fa-unlink {
+        font-size: 6em;
+        padding: 25px 0;
+    }
+
+    i.fa-arrow-alt-circle-left {
+        padding-right: 5px;
+    }
+}
+
+/* Footer Google Map */
 #map {
     width: 500px;
     height: 200px;

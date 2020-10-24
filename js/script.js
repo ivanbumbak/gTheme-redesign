@@ -1,7 +1,6 @@
 //Show Section Nutshell on Scroll
 window.addEventListener("scroll", () => {
     const nutshell = document.getElementsByClassName('nutshell-third');
-    const sectionNutshell = document.getElementsByClassName('section-nutshell');
 
     if(window.pageYOffset >  1000) {
         for(let n = 0; n < nutshell.length; n++) {

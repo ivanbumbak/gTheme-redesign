@@ -4,11 +4,9 @@ window.addEventListener("scroll", () => {
     const sectionNutshell = document.getElementsByClassName('section-nutshell');
 
     if(window.pageYOffset >  1000) {
-        setTimeout(() => {
-            for(let n = 0; n < nutshell.length; n++) {
-                nutshell[n].classList.add('show');
-            }
-        });
+        for(let n = 0; n < nutshell.length; n++) {
+            nutshell[n].classList.add('show');
+        }
     }
 });
 

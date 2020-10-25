@@ -13,6 +13,8 @@
     <header class="<?php 
         if (is_front_page()) :
             echo 'home-header';
+        elseif (is_404() || is_page('thank-you')) :
+            echo 'respond-header';
         else : 
             echo 'page-header';
         endif; ?>">

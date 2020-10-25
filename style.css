@@ -33,6 +33,60 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
 
+.respond-header {
+  visibility: hidden; }
+
+.error404 {
+  display: flex; }
+
+.wrapper-error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .wrapper-error404 h1 {
+    font-size: 8em; }
+  .wrapper-error404 p {
+    font-size: 24px;
+    padding-top: 10px; }
+  .wrapper-error404 a {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif; }
+    .wrapper-error404 a:hover {
+      border-bottom: 1px solid #d30c09dc; }
+  .wrapper-error404 i.fa-unlink {
+    font-size: 6em;
+    padding: 25px 0; }
+  .wrapper-error404 i.fa-arrow-alt-circle-left {
+    padding-right: 5px; }
+
+.respond-header {
+  visibility: hidden; }
+
+.thank-you {
+  display: flex; }
+
+.wrapper-thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .wrapper-thank-you h1 {
+    font-size: 3em;
+    margin-bottom: 10x; }
+  .wrapper-thank-you a {
+    font-size: 2em;
+    color: #d30c09dc;
+    padding-top: 10px; }
+  .wrapper-thank-you i.fa-link {
+    font-size: 4em; }
+  .wrapper-thank-you i.fa-check-circle {
+    font-size: 6em;
+    color: #333333;
+    padding: 25px 0; }
+
 /* General layout */
 body, html {
   display: flex;
@@ -570,49 +624,6 @@ footer.site-footer {
       transition-duration: 0.3s; }
 
 /* Thank you page */
-.wrapper-thank-you {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%; }
-  .wrapper-thank-you h1 {
-    font-size: 3em; }
-  .wrapper-thank-you a {
-    font-size: 2em;
-    color: #d30c09dc;
-    padding-top: 5px; }
-  .wrapper-thank-you i.fa-link {
-    font-size: 4em; }
-  .wrapper-thank-you i.fa-check-circle {
-    font-size: 6em;
-    color: #333333;
-    padding: 25px 0; }
-
-/* Page 404 */
-.wrapper-error404 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 35px; }
-  .wrapper-error404 h1 {
-    font-size: 8em; }
-  .wrapper-error404 p {
-    font-size: 24px;
-    padding-top: 10px; }
-  .wrapper-error404 a {
-    font-size: 24px;
-    font-family: "Open Sans", sans-serif; }
-    .wrapper-error404 a:hover {
-      border-bottom: 1px solid #d30c09dc; }
-  .wrapper-error404 i.fa-unlink {
-    font-size: 6em;
-    padding: 25px 0; }
-  .wrapper-error404 i.fa-arrow-alt-circle-left {
-    padding-right: 5px; }
-
 /* Footer Google Map */
 #map {
   width: 500px;

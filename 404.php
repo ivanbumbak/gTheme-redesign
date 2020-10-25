@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-    <div class="container">
+    <div class="container error404">
         <div class="wrapper-error404">
             <h1>404</h1>
             <i class="fas fa-unlink"></i>
@@ -17,5 +17,3 @@ get_header(); ?>
             <a href="<?php echo home_url(); ?>"><i class="far fa-arrow-alt-circle-left"></i>Povratak na početnu stranicu.</a>
         </div>
     </div>
-
-<?php get_footer(); ?>

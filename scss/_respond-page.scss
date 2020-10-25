@@ -1,0 +1,41 @@
+// _respond-page.scss
+
+@import "constants";
+@import "mixins";
+
+.respond-header {
+    visibility: hidden;
+}
+
+.thank-you {
+    display: flex;
+}
+
+.wrapper-thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10x;
+    }
+
+    a {
+        font-size: 2em;
+        color: $link-color;
+        padding-top: 10px;
+    }
+
+    i.fa-link {
+        font-size: 4em;
+    }
+
+    i.fa-check-circle {
+        font-size: 6em;
+        color: #333333;
+        padding: 25px 0;
+    }
+}

@@ -1,0 +1,45 @@
+// _404.scss
+@import "constants";
+@import "mixins";
+
+.respond-header {
+    visibility: hidden;
+}
+
+.error404 {
+    display: flex;
+}
+
+.wrapper-error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        font-size: 8em;
+    }
+
+    p {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    a {
+        font-size: 24px;
+        font-family: $main-font;
+        &:hover {
+            border-bottom: 1px solid $link-color;
+        }
+    }
+
+    i.fa-unlink {
+        font-size: 6em;
+        padding: 25px 0;
+    }
+
+    i.fa-arrow-alt-circle-left {
+        padding-right: 5px;
+    }
+}

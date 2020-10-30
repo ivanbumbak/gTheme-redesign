@@ -58,13 +58,43 @@
     </div>
 </div>
 
+<div class="section-service">
+    <div class="container">
+        <div class="wrapper-service">
+            <div class="service">
+                <i class="fal fa-laptop-medical"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="service">
+                <i class="fal fa-air-conditioner"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="service">
+                <i class="fal fa-cash-register"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="service">
+                <i class="fal fa-balance-scale"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="section-nutshell">
     <div class="container">
         <div class="wrapper-nutshell">
             <div class="nutshell-third">
                 <h4>Tko smo?</h4>
                 <div class="nutshell-icon">
-                    <i class="fas fa-user"></i>
+                    <i class="fal fa-user"></i>
                 </div>
                 <p>Gambi d.o.o. je privatna tvrtka osnovana 1991. godine. Osnovna djelatnost bila je prodaja mjerila mase i vaga i registar blagajni.
                 S vremenom proširuje svoju djelatnost i danas izvodi instalacije rashladnih sistema, elektro i strojarskih instalacija, 
@@ -75,7 +105,7 @@
             <div class="nutshell-third">
                 <h4>Što radimo?</h4>
                 <div class="nutshell-icon">
-                    <i class="fas fa-cog"></i>
+                    <i class="fal fa-cog"></i>
                 </div>
                 <p>Prodaja, servis i montaža rashladnih sistema, elektro i strojarske instalacije. Servis, prodaja i baždaranje
                 mjerila mase, vage i utega. Instalacija nadzornog sustava. Servis i prodaja informatičke opreme, projektiranje i instalacija računalnih mreža.</p>
@@ -85,7 +115,7 @@
             <div class="nutshell-third">
                 <h4>Gdje smo?</h4>
                 <div class="nutshell-icon">
-                    <i class="fas fa-building"></i>
+                    <i class="fal fa-building"></i>
                 </div>
                 <p>Sjedište i servis tvrtke smješteno je u Bilicama, na adresi Novo Naselje 28 u neposrednoj blizini autokuće Mazda, pokraj biličkog spomenika. 
                 U sklopu servisa uključena je i veleprodaja tvrtke.</p>

@@ -6,7 +6,11 @@ function gTheme_resources() {
 
     //Custom JS
     wp_register_script( 'script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ) );    
-	wp_enqueue_script('script');
+    wp_enqueue_script('script');
+    
+    //Icon Kits JS
+    wp_register_script( 'icons', get_template_directory_uri() . '/js/icon-kits.js', array( 'jquery' ) );    
+    wp_enqueue_script('icons');
 }
 add_action('wp_enqueue_scripts', 'gTheme_resources');
 

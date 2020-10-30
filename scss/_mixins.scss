@@ -12,7 +12,7 @@
     }
 }
 
-//Fade color on hover on social icons
+// Fade on hover
 @mixin fade($fade) {
     -webkit-transition: $fade;
     -moz-transition: $fade;
@@ -24,7 +24,7 @@
     transition-duration: 0.3s;
 }
 
-//Unfade color on social icons
+// Unfade on unhover
 @mixin unfade($unfade) {
     -webkit-transition: $unfade;
     -moz-transition: $unfade;

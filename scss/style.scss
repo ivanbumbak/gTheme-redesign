@@ -4,7 +4,7 @@ Author: theBumbs
 Author URI: ;
 Licence: ;
 Licence URI: ;
-Version: 1.0.
+Version: 1.1.1
 Description: Personalized Wordpress theme for a local IT company.
 */
 
@@ -138,7 +138,7 @@ header.page-header {
 }
 
 .section-news {
-    background-color: #fafafa;
+    background-color: #f1f1f1;
 
     h1 {
         text-align: center;
@@ -173,6 +173,38 @@ header.page-header {
 
     p {
         padding: 0 15px;
+    }
+}
+
+.section-service {
+    background-color: #fafafa;
+    padding: 50px 0;
+}
+
+.wrapper-service {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 350px;
+    margin: 30px;
+
+    i {
+        font-size: 3.5em;
+        font-family: $main-color-font;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-family: $main-font;
+        color: $main-color-font;
+        padding: 10px;
     }
 }
 

@@ -22,13 +22,16 @@
 
                 
                     <article class="recent-post">
+                        <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('category-thumb');
+                        } ?> 
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <p class="post-info">
-                        <?php the_time('j. F, Y'); ?> &bull; <?php the_author(); ?> &bull;
+                        <?php the_time('j. F, Y'); ?> &bull; <?php the_author(); ?>
                         
                         <?php 
                         
-                        $categories = get_the_category();
+                        /* $categories = get_the_category();
                         $output = '';
 
                         if ($categories) {
@@ -37,7 +40,7 @@
                             }
 
                             echo $output;
-                        }
+                        } */
                         
                         ?>
                     </p>

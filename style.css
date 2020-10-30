@@ -219,22 +219,23 @@ header.page-header {
   margin: 0 auto; }
 
 .recent-post {
-  border-top: 4px solid #d30c09dc;
   margin: 0 30px 50px 30px;
-  padding: 20px;
   width: 30%;
-  height: 300px;
+  height: 450px;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
   .recent-post p.post-info {
     font-size: 13px;
     font-weight: 600;
     color: #333;
     margin: 0;
-    padding-bottom: 15px; }
+    padding: 0 0 10px 15px; }
   .recent-post h2 {
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 10px 0 0 15px; }
     .recent-post h2:hover {
       font-weight: 600; }
+  .recent-post p {
+    padding: 0 15px; }
 
 .section-nutshell {
   padding: 50px 0;
@@ -334,7 +335,7 @@ article.page-content p.post-info {
   font-weight: 600;
   color: #333;
   margin: 0;
-  padding-bottom: 15px; }
+  padding: 0 0 10px 15px; }
 
 /* Special page layouts */
 .portfolio {
@@ -571,7 +572,7 @@ footer.site-footer {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 35px 30px 15px 0px; }
+  padding: 30px 0; }
 
 .footer-half {
   display: flex;
@@ -623,7 +624,6 @@ footer.site-footer {
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
 
-/* Thank you page */
 /* Footer Google Map */
 #map {
   width: 500px;

@@ -20,4 +20,12 @@ function gTheme_setup() {
 }
 add_action('after_setup_theme', 'gTheme_setup');
 
+//Thumbnails
+if (function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(500, 500);
+ 
+    add_image_size('category-thumb', 384, 170);
+ }
+
 ?>

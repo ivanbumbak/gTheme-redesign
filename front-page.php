@@ -23,7 +23,7 @@
                 
                     <article class="recent-post">
                         <?php if (has_post_thumbnail()) {
-                        the_post_thumbnail('category-thumb');
+                        the_post_thumbnail('recent-post-thumb');
                         } ?> 
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <p class="post-info">

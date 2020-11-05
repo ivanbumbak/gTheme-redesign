@@ -20,11 +20,13 @@
 
     h1 {
         font-size: 8em;
+        color: $main-color-font;
     }
 
     p {
         font-size: 24px;
         font-family: $main-font;
+        color: $main-color-font;
     }
 
     a {
@@ -42,14 +44,14 @@
     }
 
     i.fa-backward {
-        padding-right: 5px;
+        padding-right: 15px;
     }
 }
 
 #not-found-heading {
     text-transform: uppercase;
     font-size: 30px;
-    color: #dcdcdc;
+    color: #797979;
 }
 
 #not-found-text {

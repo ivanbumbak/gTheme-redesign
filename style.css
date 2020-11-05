@@ -231,7 +231,8 @@ header.page-header {
   margin: 0 30px 50px 30px;
   width: 30%;
   height: 450px;
-  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
+  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2);
+  background-color: #fefefe; }
   .recent-post p.post-info {
     font-size: 13px;
     font-weight: 600;
@@ -247,7 +248,7 @@ header.page-header {
     padding: 0 15px; }
 
 .section-service {
-  background-color: #fafafa;
+  background-color: #fefefe;
   padding: 50px 0; }
 
 .wrapper-service {

@@ -160,6 +160,7 @@ header.page-header {
     width: 30%;
     height: 450px;
     box-shadow: $box-shadow;
+    background-color: $light-background-color;
 
     @include post-info;
 
@@ -177,7 +178,7 @@ header.page-header {
 }
 
 .section-service {
-    background-color: #fafafa;
+    background-color: $light-background-color;
     padding: 50px 0;
 }
 
@@ -248,7 +249,7 @@ header.page-header {
     width: 30%;
     height: 500px;
     margin: 30px;
-    background-color: #fefefe;
+    background-color: $light-background-color;
     border-top: 4px solid #1a1a1a;
     box-shadow:  $box-shadow;
 

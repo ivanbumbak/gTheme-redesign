@@ -19,23 +19,28 @@
     width: 100%;
 
     h1 {
+        font-family: $heading-font;
         font-size: 3em;
         margin-bottom: 10x;
     }
 
     a {
-        font-size: 2em;
+        font-family: $main-font;
+        font-size: 24px;
         color: $link-color;
         padding-top: 10px;
+        &:hover {
+            border-bottom: 1px solid $link-color;
+        }
     }
 
-    i.fa-link {
-        font-size: 4em;
+    i.fa-backward {
+        padding-right: 5px;
     }
 
     i.fa-check-circle {
-        font-size: 6em;
-        color: #333333;
+        font-size: 150px;
+        color: $main-color-font;
         padding: 25px 0;
     }
 }

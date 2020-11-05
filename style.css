@@ -84,17 +84,21 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
   justify-content: center;
   width: 100%; }
   .wrapper-thank-you h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 3em;
     margin-bottom: 10x; }
   .wrapper-thank-you a {
-    font-size: 2em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
     color: #d30c09dc;
     padding-top: 10px; }
-  .wrapper-thank-you i.fa-link {
-    font-size: 4em; }
+    .wrapper-thank-you a:hover {
+      border-bottom: 1px solid #d30c09dc; }
+  .wrapper-thank-you i.fa-backward {
+    padding-right: 5px; }
   .wrapper-thank-you i.fa-check-circle {
-    font-size: 6em;
-    color: #333333;
+    font-size: 150px;
+    color: #333;
     padding: 25px 0; }
 
 /* General layout */

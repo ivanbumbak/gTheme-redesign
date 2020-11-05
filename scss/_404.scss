@@ -20,7 +20,7 @@
 
     h1 {
         font-size: 8em;
-        color: $main-color-font;
+        color: #dcdcdc;
     }
 
     p {
@@ -51,7 +51,7 @@
 #not-found-heading {
     text-transform: uppercase;
     font-size: 30px;
-    color: #797979;
+    color: $main-color-font;
 }
 
 #not-found-text {

@@ -34,10 +34,11 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
     transition-duration: 0.3s; }
 
 .respond-header {
-  visibility: hidden; }
+  display: none; }
 
 .error404 {
-  display: flex; }
+  display: flex;
+  background-color: #ffffff; }
 
 .wrapper-error404 {
   display: flex;
@@ -49,17 +50,25 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
     font-size: 8em; }
   .wrapper-error404 p {
     font-size: 24px;
-    padding-top: 10px; }
+    font-family: "Open Sans", sans-serif; }
   .wrapper-error404 a {
     font-size: 24px;
     font-family: "Open Sans", sans-serif; }
     .wrapper-error404 a:hover {
       border-bottom: 1px solid #d30c09dc; }
-  .wrapper-error404 i.fa-unlink {
-    font-size: 6em;
-    padding: 25px 0; }
-  .wrapper-error404 i.fa-arrow-alt-circle-left {
+  .wrapper-error404 i.fa-dizzy {
+    font-size: 200px;
+    padding: 0 25px; }
+  .wrapper-error404 i.fa-backward {
     padding-right: 5px; }
+
+#not-found-heading {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #dcdcdc; }
+
+#not-found-text {
+  padding-top: 10px; }
 
 .respond-header {
   visibility: hidden; }

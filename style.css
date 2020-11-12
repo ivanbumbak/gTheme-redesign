@@ -279,9 +279,35 @@ header.page-header {
     color: #333;
     padding: 10px; }
 
+.section-numbers {
+  padding: 100px 0;
+  background-color: #f1f1f1; }
+  .section-numbers .wrapper-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+  .section-numbers .numbers-half {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0; }
+    .section-numbers .numbers-half .numbers-heading {
+      display: flex; }
+      .section-numbers .numbers-half .numbers-heading h1 {
+        font-size: 75px;
+        color: #d30c09dc; }
+      .section-numbers .numbers-half .numbers-heading h3 {
+        font-size: 25px;
+        color: #333;
+        padding: 15px 0 0 5px;
+        line-height: 1.1; }
+    .section-numbers .numbers-half h3 {
+      font-size: 25px;
+      color: #333; }
+
 .section-nutshell {
   padding: 50px 0;
-  background-color: #f1f1f1; }
+  background-color: #fefefe; }
 
 .wrapper-nutshell {
   display: flex;

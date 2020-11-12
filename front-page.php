@@ -3,15 +3,13 @@
 <div class="hero">
     <div class="hero-wrapper">
         <div class="first-row">
-        <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
-            <!-- <p id="fiskal">Fiskalne blagajne. Klimatizacija.<br>Uredska oprema.</p><br>
-            <p id="vaga">Ovlašteni servis i prodaja mjerila mase, vage i utega.</p> -->
+            <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
         </div>
     </div>
 </div>
 
+<!-- Recent News Section -->
 <div class="section-news">
-    <!-- Recent News -->
     <h1>Novosti</h1>
     
     <div class="articles">
@@ -20,7 +18,6 @@
         if ($news -> have_posts()) :
             while ($news -> have_posts()) : $news -> the_post(); ?>
 
-                
                     <article class="recent-post">
                         <?php if (has_post_thumbnail()) {
                         the_post_thumbnail('recent-post-thumb');
@@ -46,18 +43,16 @@
                     </p>
                         <p><?php the_excerpt(); ?></p>
                     </article>
-                
 
             <?php endwhile;
-
         else :
             echo '<p>No content found</p>';
-
         endif; 
         wp_reset_postdata(); ?>
     </div>
 </div>
 
+<!-- Section Services -->
 <div class="section-service">
     <div class="container">
         <div class="wrapper-service">
@@ -88,6 +83,27 @@
     </div>
 </div>
 
+<!-- Section Numbers -->
+<div class="section-numbers">
+    <div class="container">
+        <div class="wrapper-numbers">
+            <div class="numbers-half">
+                <div class="numbers-heading">
+                    <h1>30</h1><h3>Godina<br>Iskustva</h3>
+                </div>
+            </div>
+
+            <div class="numbers-half">
+                <div class="numbers-heading">
+                    <h1>1000+</h1>
+                </div>
+            <h3>Zadovoljnih klijenata</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section Nutshell -->
 <div class="section-nutshell">
     <div class="container">
         <div class="wrapper-nutshell">

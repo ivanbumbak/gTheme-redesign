@@ -21,8 +21,10 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: $light-background-color;
+    background-image: $main-background-image;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,11 +62,11 @@ header.home-header, header.page-header {
     display: flex;
     flex-shrink: 0;
     width: 100%;
+    background-color: $dark-background-color;
 }
 
 header.page-header {
     position: initial;
-    background-color: $light-background-color;
 }
 
 .header-wrapper {
@@ -138,7 +140,7 @@ header.page-header {
 }
 
 .section-news {
-    background-color: $dark-background-color;
+    background-color: $transparent;
 
     h1 {
         text-align: center;
@@ -178,7 +180,7 @@ header.page-header {
 }
 
 .section-service {
-    background-color: $light-background-color;
+    background-color: $dark-background-color;
     padding: 50px 0;
 }
 
@@ -192,9 +194,16 @@ header.page-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     width: 25%;
-    height: 350px;
-    margin: 30px;
+    height: 375px;
+    margin: 35px;
+
+    h1 {
+        font-size: 21px;
+        font-family: $heading-font;
+        color: $main-color-font;
+    }
 
     i {
         font-size: 3.5em;
@@ -207,17 +216,28 @@ header.page-header {
         color: $main-color-font;
         padding: 10px;
     }
+
+    a {
+        font-family: $main-font;
+        border-bottom: 1px solid $dark-background-color;
+        @include unfade(ease-in);
+        &:hover {
+            border-bottom: 1px solid $link-color;
+            @include fade(ease-in);
+        }
+    }
 }
 
 .section-numbers {
-    padding: 100px 0;
-    background-color: $dark-background-color;
+    padding: 50px 0;
+    background-color: $transparent;
 
     .wrapper-numbers {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        height: 200px;
     }
     
     .numbers-half {
@@ -250,7 +270,7 @@ header.page-header {
 
 .section-nutshell {
     padding: 50px 0;
-    background-color: $light-background-color;
+    background-color: $dark-background-color;
 }
 
 .wrapper-nutshell {
@@ -346,6 +366,7 @@ article.page-content {
     flex: 1;
     flex-direction: row-reverse;
     max-width: 100%;
+    background-color: $light-background-color;
 }
 
 /* Page About Us */
@@ -448,6 +469,14 @@ article.page-content {
 }
 
 /* Page Partners */
+.partners {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    background-color: $light-background-color;
+}
+
 .wrapper-partners {
     display: flex;
     flex-direction: row;
@@ -484,6 +513,14 @@ article.page-content {
 }
 
 /* Page Contact */
+.contact {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    background-color: $light-background-color;
+}
+
 .wrapper-form {
     display: flex;
     flex-direction: row;

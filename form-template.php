@@ -62,29 +62,32 @@ if(!empty($_POST)) {
 get_header(); ?>
 
 <!-- Page content -->
-<div class="container">
-    <div class="wrapper-form">
-        <div class="section-half-contact">
-            <article class="form-article">
-                <?php echo $response; ?>
-                <form class="contact-form" action="<?php the_permalink(43); ?>" method="post">
-                    <input required value="<?php echo isset($_POST['user_name'])? $_POST['user_name'] : "" ?>" name="user_name" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Unesite ime poduzeća ili Vaše ime i prezime">
-                    <input required value="<?php echo isset($_POST['user_phone'])? $_POST['user_phone'] : "" ?>" name="user_phone" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt telefon">
-                    <input required value="<?php echo isset($_POST['user_email'])? $_POST['user_email'] : "" ?>" name="user_email" type="email" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt email">
-                    <textarea required value="<?php echo isset($_POST['user_message'])? $_POST['user_message'] : "" ?>" name="user_message" type="text" title="Molimo popunite ovo polje" rows="7" cols="37" wrap="soft" placeholder="Unesite Vaš upit"></textarea>
-                    
-                    <input type="hidden" name="submitted" value="1">
-                    <input type="submit" value="Pošalji upit">
-                </form>	
-            </article>
-        </div>
-        <div class="section-half-contact">
-            <h2>Imate upit? <br> <br> Ispunite obrazac ili nam se javite putem društvenih mreža</h2>
-            <a href="https://www.facebook.com/gambidoo" title="Facebook page" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" title="Instagram page" target="_blank"><i class="fab fa-instagram"></i></a>
+<div class="contact">
+    <div class="container">
+        <div class="wrapper-form">
+            <div class="section-half-contact">
+                <article class="form-article">
+                    <?php echo $response; ?>
+                    <form class="contact-form" action="<?php the_permalink(43); ?>" method="post">
+                        <input required value="<?php echo isset($_POST['user_name'])? $_POST['user_name'] : "" ?>" name="user_name" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Unesite ime poduzeća ili Vaše ime i prezime">
+                        <input required value="<?php echo isset($_POST['user_phone'])? $_POST['user_phone'] : "" ?>" name="user_phone" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt telefon">
+                        <input required value="<?php echo isset($_POST['user_email'])? $_POST['user_email'] : "" ?>" name="user_email" type="email" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt email">
+                        <textarea required value="<?php echo isset($_POST['user_message'])? $_POST['user_message'] : "" ?>" name="user_message" type="text" title="Molimo popunite ovo polje" rows="7" cols="37" wrap="soft" placeholder="Unesite Vaš upit"></textarea>
+                        
+                        <input type="hidden" name="submitted" value="1">
+                        <input type="submit" value="Pošalji upit">
+                    </form>	
+                </article>
+            </div>
+            <div class="section-half-contact">
+                <h2>Imate upit? <br> <br> Ispunite obrazac ili nam se javite putem društvenih mreža</h2>
+                <a href="https://www.facebook.com/gambidoo" title="Facebook page" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram page" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
 </div>
+
 
 
 <?php get_footer(); ?>

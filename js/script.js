@@ -2,7 +2,7 @@
 window.addEventListener("scroll", () => {
     const nutshell = document.getElementsByClassName('nutshell-third');
 
-    if(window.pageYOffset >  1375) {
+    if(window.pageYOffset >  1750) {
         for(let n = 0; n < nutshell.length; n++) {
             nutshell[n].classList.add('show');
         }

@@ -58,26 +58,34 @@
         <div class="wrapper-service">
             <div class="service">
                 <i class="fal fa-laptop-medical"></i>
+                <h1>Servis računala</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Saznaj više</a>
             </div>
 
             <div class="service">
                 <i class="fal fa-air-conditioner"></i>
+                <h1>Klimatizacija</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Saznaj više</a>
             </div>
 
             <div class="service">
                 <i class="fal fa-cash-register"></i>
+                <h1>Fiskalne blagajne</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Saznaj više</a>
             </div>
 
             <div class="service">
                 <i class="fal fa-balance-scale"></i>
+                <h1>Servis vaga</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Saznaj više</a>
             </div>
         </div>
     </div>

@@ -21,7 +21,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: $light-background-color;
     background-attachment: fixed;
 }
 
@@ -64,7 +64,7 @@ header.home-header, header.page-header {
 
 header.page-header {
     position: initial;
-    background-color: #fefefe;
+    background-color: $light-background-color;
 }
 
 .header-wrapper {
@@ -94,12 +94,12 @@ header.page-header {
         @include unfade(ease-in);
         &:hover {
             border-bottom: 2px solid $link-color;
-            background-color: #f1f1f1;
+            background-color: $dark-background-color;
             @include fade(ease-in);
         }
         &.current-menu-item {
             border-bottom: 2px solid $link-color;
-            background-color: #f1f1f1;
+            background-color: $dark-background-color;
         }
     }
 
@@ -107,7 +107,7 @@ header.page-header {
         content: '';
         display: block;
         padding: 30px 10px 15px 10px;
-        color: $menu-links-color;
+        color: $main-color-font;
     }
 }
 
@@ -117,7 +117,7 @@ header.page-header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #f1f1f1;
+    background-color: $dark-background-color;
 
     p {
         font-family: $heading-font;
@@ -138,7 +138,7 @@ header.page-header {
 }
 
 .section-news {
-    background-color: #f1f1f1;
+    background-color: $dark-background-color;
 
     h1 {
         text-align: center;
@@ -269,7 +269,7 @@ header.page-header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #f1f1f1;
+    background-color: $dark-background-color;
 
     i {
         font-size: 4em;
@@ -289,7 +289,7 @@ header.page-header {
     height: 500px;
     margin: 30px;
     background-color: $light-background-color;
-    border-top: 4px solid #1a1a1a;
+    border-top: 4px solid $main-color-font;
     box-shadow:  $box-shadow;
 
     h4 {
@@ -313,7 +313,7 @@ header.page-header {
         color: $link-color;
         @include unfade(ease-in);
         &:hover {
-            color: #fefefe;
+            color: $light-background-color;
             background-color: $link-color;
             @include fade(ease-in);
         }
@@ -330,7 +330,7 @@ article.page-content {
     h2 {
         font-size: 21px;
         padding-top: 10px;
-        color: $highlight-color-font;
+        color: $link-color;
     }
 
     p {
@@ -460,10 +460,10 @@ article.page-content {
 .section-quarter-partners {
     width: 21%;
     height: 100px;
-    border-top: 2px solid #1a1a1a;
+    border-top: 2px solid $main-color-font;
     margin: 50px 5px;
     text-align: center;
-    background-color: #fefefe;
+    background-color: $light-background-color;
     box-shadow: $box-shadow;
 
     a {
@@ -530,11 +530,11 @@ article.page-content {
     font-size: 15px;
     margin-top: 10px;
     padding: 15px;
-    border: 1px solid #bebebe;
+    border: 1px solid $dark-grey-color;
     border-radius: 5px;
     @include unfade(ease-in);
     &:hover {
-        border: 1px solid #1a1a1a;
+        border: 1px solid $main-color-font;
         @include fade(ease-in);
     }
 }
@@ -546,12 +546,12 @@ article.page-content {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid $link-color;
-    background-color: #fefefe;
+    background-color: $light-background-color;
     color: $link-color;
     @include unfade(ease-in);
     &:hover {
         background-color: $link-color;
-        color: #fefefe;
+        color: $light-background-color;
         @include fade(ease-in);
     }
 
@@ -592,13 +592,13 @@ footer.site-footer {
     h1 {
         text-transform: uppercase;
         font-size: 26px;
-        color: $footer-text-color;
+        color: $main-color-font;
         padding-bottom: 10px;
     }
 
     p {
         font-size: 17px;
-        color: $footer-text-color;
+        color: $main-color-font;
         padding-bottom: 7px;
     }
 
@@ -613,11 +613,11 @@ footer.site-footer {
     justify-content: space-between;
     width: 100%;
     height: 80px;
-    background-color: #bebebe;
+    background-color: $dark-grey-color;
 
     p {
         padding: 30px 0 20px 35px;
-        color: $footer-text-color;
+        color: $main-color-font;
     }
 
     i {

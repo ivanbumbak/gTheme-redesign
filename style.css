@@ -52,7 +52,7 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
   .wrapper-error404 p {
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
-    color: #333; }
+    color: #1a1a1a; }
   .wrapper-error404 a {
     font-size: 24px;
     font-family: "Open Sans", sans-serif; }
@@ -60,7 +60,7 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
       border-bottom: 1px solid #d30c09dc; }
   .wrapper-error404 i.fa-dizzy {
     font-size: 200px;
-    color: #333;
+    color: #1a1a1a;
     padding: 0 25px; }
   .wrapper-error404 i.fa-backward {
     padding-right: 15px; }
@@ -68,7 +68,7 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
 #not-found-heading {
   text-transform: uppercase;
   font-size: 30px;
-  color: #333; }
+  color: #1a1a1a; }
 
 #not-found-text {
   padding-top: 10px; }
@@ -100,7 +100,7 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
     padding-right: 5px; }
   .wrapper-thank-you i.fa-check-circle {
     font-size: 150px;
-    color: #333;
+    color: #1a1a1a;
     padding: 25px 0; }
 
 /* General layout */
@@ -110,17 +110,17 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fefefe;
   background-attachment: fixed; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: #1a1a1a;
   margin: 0; }
 
 p {
   font-family: "Open Sans", sans-serif;
-  color: #333;
+  color: #1a1a1a;
   margin: 0; }
 
 a {
@@ -243,7 +243,7 @@ header.page-header {
   .recent-post p.post-info {
     font-size: 13px;
     font-weight: 600;
-    color: #333;
+    color: #1a1a1a;
     margin: 0;
     padding: 0 0 10px 15px; }
   .recent-post h2 {
@@ -272,11 +272,11 @@ header.page-header {
   margin: 30px; }
   .service i {
     font-size: 3.5em;
-    font-family: #333;
+    font-family: #1a1a1a;
     padding-bottom: 10px; }
   .service p {
     font-family: "Open Sans", sans-serif;
-    color: #333;
+    color: #1a1a1a;
     padding: 10px; }
 
 .section-numbers {
@@ -298,12 +298,12 @@ header.page-header {
         color: #d30c09dc; }
       .section-numbers .numbers-half .numbers-heading h3 {
         font-size: 25px;
-        color: #333;
+        color: #1a1a1a;
         padding: 15px 0 0 5px;
         line-height: 1.1; }
     .section-numbers .numbers-half h3 {
       font-size: 25px;
-      color: #333; }
+      color: #1a1a1a; }
 
 .section-nutshell {
   padding: 50px 0;
@@ -393,7 +393,7 @@ header.page-header {
 article.page-content h2 {
   font-size: 21px;
   padding-top: 10px;
-  color: #850200; }
+  color: #d30c09dc; }
 
 article.page-content p {
   font-size: 19px; }
@@ -401,7 +401,7 @@ article.page-content p {
 article.page-content p.post-info {
   font-size: 13px;
   font-weight: 600;
-  color: #333;
+  color: #1a1a1a;
   margin: 0;
   padding: 0 0 10px 15px; }
 
@@ -533,7 +533,7 @@ article.page-content p.post-info {
     margin: 25px 30px 0 0;
     font-size: 45px; }
   .section-half-contact a {
-    color: #333;
+    color: #1a1a1a;
     -webkit-transition: ease-in;
     -moz-transition: ease-in;
     -o-transition: ease-in;
@@ -672,7 +672,7 @@ footer.site-footer {
     padding: 30px 20px 20px 0;
     font-size: 30px; }
   .footer-cc a {
-    color: #333;
+    color: #1a1a1a;
     -webkit-transition: ease-in;
     -moz-transition: ease-in;
     -o-transition: ease-in;

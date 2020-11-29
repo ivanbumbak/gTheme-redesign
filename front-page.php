@@ -97,13 +97,13 @@
         <div class="wrapper-numbers">
             <div class="numbers-half">
                 <div class="numbers-heading">
-                    <h1>30</h1><h3>Godina<br>Iskustva</h3>
+                    <h1 id="years">30</h1><h3>Godina<br>Iskustva</h3>
                 </div>
             </div>
 
             <div class="numbers-half">
                 <div class="numbers-heading">
-                    <h1>1000+</h1>
+                    <h1 id="clients">1000+</h1>
                 </div>
             <h3>Zadovoljnih klijenata</h3>
             </div>

@@ -8,7 +8,17 @@
 
 .error404 {
     display: flex;
-    background-color: $respond-background-color;
+    flex: 1;
+    width: 100%;
+    background-color: $transparent;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .wrapper-error404 {
@@ -19,14 +29,11 @@
     width: 100%;
 
     h1 {
-        font-size: 8em;
-        color: #dcdcdc;
+        font-size: 11em;
     }
 
     p {
         font-size: 24px;
-        font-family: $main-font;
-        color: $main-color-font;
     }
 
     a {
@@ -35,12 +42,6 @@
         &:hover {
             border-bottom: 1px solid $link-color;
         }
-    }
-
-    i.fa-dizzy {
-        font-size: 200px;
-        color: $main-color-font;
-        padding: 0 25px;
     }
 
     i.fa-backward {

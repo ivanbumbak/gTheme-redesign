@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-<div class="container thank-you">
+<div class="thank-you">
     <div class="wrapper-thank-you">
         <i class="fal fa-check-circle"></i>
         <h1>Hvala! Vaš upit je uspješno poslan!</h1>

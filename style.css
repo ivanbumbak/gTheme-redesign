@@ -4,7 +4,7 @@ Author: theBumbs
 Author URI: ;
 Licence: ;
 Licence URI: ;
-Version: 1.1.1
+Version: 1.1.2
 Description: Personalized Wordpress theme for a local IT company.
 */
 div#n2-ss-2 .n2-ss-layers-container {
@@ -38,7 +38,16 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
 
 .error404 {
   display: flex;
-  background-color: #ffffff; }
+  flex: 1;
+  width: 100%;
+  background-color: #ffffffa1; }
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0; }
 
 .wrapper-error404 {
   display: flex;
@@ -47,21 +56,14 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
   justify-content: center;
   width: 100%; }
   .wrapper-error404 h1 {
-    font-size: 8em;
-    color: #dcdcdc; }
+    font-size: 11em; }
   .wrapper-error404 p {
-    font-size: 24px;
-    font-family: "Open Sans", sans-serif;
-    color: #1a1a1a; }
+    font-size: 24px; }
   .wrapper-error404 a {
     font-size: 24px;
     font-family: "Open Sans", sans-serif; }
     .wrapper-error404 a:hover {
       border-bottom: 1px solid #d30c09dc; }
-  .wrapper-error404 i.fa-dizzy {
-    font-size: 200px;
-    color: #1a1a1a;
-    padding: 0 25px; }
   .wrapper-error404 i.fa-backward {
     padding-right: 15px; }
 
@@ -77,7 +79,10 @@ div#n2-ss-2 .n2-font-3833c7109bf792dc4d24d9808e3b366f-link a {
   visibility: hidden; }
 
 .thank-you {
-  display: flex; }
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  background-color: #ffffffa1; }
 
 .wrapper-thank-you {
   display: flex;
@@ -272,7 +277,7 @@ header.page-header {
   justify-content: space-evenly;
   width: 25%;
   height: 375px;
-  margin: 35px; }
+  margin: 25px; }
   .service h1 {
     font-size: 21px;
     font-family: "Montserrat", sans-serif;
@@ -307,36 +312,9 @@ header.page-header {
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
 
-.section-numbers {
-  padding: 50px 0;
-  background-color: #ffffffa1; }
-  .section-numbers .wrapper-numbers {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 200px; }
-  .section-numbers .numbers-half {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.0; }
-    .section-numbers .numbers-half .numbers-heading {
-      display: flex; }
-      .section-numbers .numbers-half .numbers-heading h1 {
-        font-size: 75px;
-        color: #d30c09dc; }
-      .section-numbers .numbers-half .numbers-heading h3 {
-        font-size: 25px;
-        color: #1a1a1a;
-        padding: 15px 0 0 5px;
-        line-height: 1.1; }
-    .section-numbers .numbers-half h3 {
-      font-size: 25px;
-      color: #1a1a1a; }
-
 .section-nutshell {
   padding: 50px 0;
-  background-color: #f7f7f7; }
+  background-color: #ffffffa1; }
 
 .wrapper-nutshell {
   display: flex;
@@ -416,7 +394,15 @@ header.page-header {
   .nutshell-third.show {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0); }
+    transform: translateY(0);
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 /* Page Layout */
 article.page-content h2 {
@@ -562,7 +548,8 @@ article.page-content p.post-info {
   flex: 1;
   flex-direction: row-reverse;
   max-width: 100%;
-  background-color: #fefefe; }
+  background-color: #fefefe;
+  padding-bottom: 25px; }
 
 .wrapper-form {
   display: flex;
@@ -601,8 +588,13 @@ article.page-content p.post-info {
 .form-article h2 {
   margin-top: 25px; }
 
-.contact-form {
+.form-article .contact-form {
   max-width: 28%; }
+
+.form-article .error {
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10px; }
 
 .contact-form input[type=text],
 .contact-form input[type=email],

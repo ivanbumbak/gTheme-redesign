@@ -67,8 +67,7 @@ get_header(); ?>
         <div class="wrapper-form">
             <div class="section-half-contact">
                 <article class="form-article">
-                    <?php echo $response; ?>
-                    <form class="contact-form" action="<?php the_permalink(43); ?>" method="post">
+                    <form class="contact-form" action="<?php the_permalink(30); ?>" method="post">
                         <input required value="<?php echo isset($_POST['user_name'])? $_POST['user_name'] : "" ?>" name="user_name" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Unesite ime poduzeća ili Vaše ime i prezime">
                         <input required value="<?php echo isset($_POST['user_phone'])? $_POST['user_phone'] : "" ?>" name="user_phone" type="text" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt telefon">
                         <input required value="<?php echo isset($_POST['user_email'])? $_POST['user_email'] : "" ?>" name="user_email" type="email" title="Molimo popunite ovo polje" size="37" placeholder="Kontakt email">
@@ -77,6 +76,8 @@ get_header(); ?>
                         <input type="hidden" name="submitted" value="1">
                         <input type="submit" value="Pošalji upit">
                     </form>	
+
+                    <?php echo $response; ?>
                 </article>
             </div>
             <div class="section-half-contact">

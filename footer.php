@@ -22,7 +22,7 @@
         </footer>
 
         <div class="footer-cc">
-            <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Sva prava pridržana.</p>
+            <p>&copy; 1993 - <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Sva prava pridržana.</p>
 
             <div id="social-icons">
                 <a href="https://www.facebook.com/gambidoo" title="Facebook page" target="_blank"><i class="fab fa-facebook"></i></a>

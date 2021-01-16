@@ -4,7 +4,7 @@ Author: theBumbs
 Author URI: ;
 Licence: ;
 Licence URI: ;
-Version: 1.1.1
+Version: 1.1.2
 Description: Personalized Wordpress theme for a local IT company.
 */
 
@@ -197,7 +197,7 @@ header.page-header {
     justify-content: space-evenly;
     width: 25%;
     height: 375px;
-    margin: 35px;
+    margin: 25px;
 
     h1 {
         font-size: 21px;
@@ -228,49 +228,9 @@ header.page-header {
     }
 }
 
-.section-numbers {
-    padding: 50px 0;
-    background-color: $transparent;
-
-    .wrapper-numbers {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 200px;
-    }
-    
-    .numbers-half {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.0;
-    
-        .numbers-heading {
-            display: flex;
-
-            h1 {
-                font-size: 75px;
-                color: $link-color;
-            }
-
-            h3 {
-                font-size: 25px;
-                color: $main-color-font;
-                padding: 15px 0 0 5px;
-                line-height: 1.1;
-            }
-        }
-
-        h3 {
-            font-size: 25px;
-            color: $main-color-font;
-        }
-    }
-}
-
 .section-nutshell {
     padding: 50px 0;
-    background-color: $dark-background-color;
+    background-color: $transparent;
 }
 
 .wrapper-nutshell {
@@ -342,6 +302,7 @@ header.page-header {
         visibility: visible;
         opacity: 1;
         transform: translateY(0);
+        @include fade(ease-in);
     }
 }
 
@@ -519,6 +480,7 @@ article.page-content {
     flex-direction: row-reverse;
     max-width: 100%;
     background-color: $light-background-color;
+    padding-bottom: 25px;
 }
 
 .wrapper-form {
@@ -554,10 +516,16 @@ article.page-content {
     h2 {
         margin-top: 25px;
     }
-}
 
-.contact-form {
-    max-width: 28%;
+    .contact-form {
+        max-width: 28%;
+    }
+
+    .error {
+        font-size: 21px;
+        font-family: $main-font;
+        padding-top: 10px;
+    }
 }
 
 .contact-form input[type=text],

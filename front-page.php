@@ -3,7 +3,7 @@
 <div class="hero">
     <div class="hero-wrapper">
         <div class="first-row">
-            <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
+            <?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
         </div>
     </div>
 </div>
@@ -87,25 +87,13 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <a href="#">Saznaj više</a>
             </div>
-        </div>
-    </div>
-</div>
 
-<!-- Section Numbers -->
-<div class="section-numbers">
-    <div class="container">
-        <div class="wrapper-numbers">
-            <div class="numbers-half">
-                <div class="numbers-heading">
-                    <h1 id="years">30</h1><h3>Godina<br>Iskustva</h3>
-                </div>
-            </div>
-
-            <div class="numbers-half">
-                <div class="numbers-heading">
-                    <h1 id="clients">1000+</h1>
-                </div>
-            <h3>Zadovoljnih klijenata</h3>
+            <div class="service">
+                <i class="fal fa-print"></i>
+                <h1>Uredski materijal</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Saznaj više</a>
             </div>
         </div>
     </div>

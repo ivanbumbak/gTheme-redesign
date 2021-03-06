@@ -62,7 +62,7 @@ header.home-header, header.page-header {
     display: flex;
     flex-shrink: 0;
     width: 100%;
-    background-color: $dark-background-color;
+    background-color: $light-background-color;
 }
 
 header.page-header {
@@ -96,12 +96,10 @@ header.page-header {
         @include unfade(ease-in);
         &:hover {
             border-bottom: 2px solid $link-color;
-            background-color: $dark-background-color;
             @include fade(ease-in);
         }
         &.current-menu-item {
             border-bottom: 2px solid $link-color;
-            background-color: $dark-background-color;
         }
     }
 
@@ -119,7 +117,7 @@ header.page-header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: $dark-background-color;
+    background-color: $light-background-color;
 
     p {
         font-family: $heading-font;
@@ -163,8 +161,12 @@ header.page-header {
     height: 450px;
     box-shadow: $box-shadow;
     background-color: $light-background-color;
-
     @include post-info;
+
+    img {
+        max-width: 384px;
+        max-height: 170px;
+    }
 
     h2 {
         font-weight: 300;
@@ -435,7 +437,7 @@ article.page-content {
     flex: 1;
     flex-direction: row-reverse;
     max-width: 100%;
-    background-color: $light-background-color;
+    background-color: $transparent;
 }
 
 .wrapper-partners {

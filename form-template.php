@@ -30,10 +30,10 @@ $message_unsent  = "Nešto se loše dogodilo. Pokušajte ponovno.";
 $message_sent    = "Hvala. Vaš upit je poslan";
  
 // User posted variables
-$user_name = $_POST['user_name'];
-$user_phone = $_POST['user_phone'];
-$user_email = $_POST['user_email'];
-$user_message = $_POST['user_message'];
+$user_name = 'user_name';
+$user_phone = 'user_phone';
+$user_email = 'user_email';
+$user_message = 'user_message';
 
 /* Mail content */
 $mail="Naziv poduzeća ili ime korisnika: $user_name
@@ -44,7 +44,7 @@ $mail="Naziv poduzeća ili ime korisnika: $user_name
 // php mailer variables
 $to = 'gambi@si.t-com.hr';
 $subject = "Upit putem web stranice";
-$headers = 'Od: '. $user_name . "\n" . 'Odgovori na: ' . $email . "\n";
+$headers = 'Od: '. $user_name . "\n" . 'Odgovori na: ' . $user_email . "\n";
 
 // Checking if the form is correct
 if(!empty($_POST)) {

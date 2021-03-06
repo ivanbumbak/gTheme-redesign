@@ -150,7 +150,7 @@ header.home-header, header.page-header {
   display: flex;
   flex-shrink: 0;
   width: 100%;
-  background-color: #f7f7f7; }
+  background-color: #fefefe; }
 
 header.page-header {
   position: initial; }
@@ -186,7 +186,6 @@ header.page-header {
   transition-duration: 0.3s; }
   .main-nav li:hover {
     border-bottom: 2px solid #d30c09dc;
-    background-color: #f7f7f7;
     -webkit-transition: ease-in;
     -moz-transition: ease-in;
     -o-transition: ease-in;
@@ -196,8 +195,7 @@ header.page-header {
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
   .main-nav li.current-menu-item {
-    border-bottom: 2px solid #d30c09dc;
-    background-color: #f7f7f7; }
+    border-bottom: 2px solid #d30c09dc; }
 
 .main-nav a {
   content: '';
@@ -211,7 +209,7 @@ header.page-header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: #f7f7f7; }
+  background-color: #fefefe; }
   .hero p {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
@@ -253,6 +251,9 @@ header.page-header {
     color: #1a1a1a;
     margin: 0;
     padding: 0 0 10px 15px; }
+  .recent-post img {
+    max-width: 384px;
+    max-height: 170px; }
   .recent-post h2 {
     font-weight: 300;
     padding: 10px 0 0 15px; }
@@ -512,7 +513,7 @@ article.page-content p.post-info {
   flex: 1;
   flex-direction: row-reverse;
   max-width: 100%;
-  background-color: #fefefe; }
+  background-color: #ffffffa1; }
 
 .wrapper-partners {
   display: flex;

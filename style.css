@@ -215,15 +215,14 @@ header.page-header {
     font-size: 30px;
     font-weight: 800;
     padding-bottom: 10px; }
-
-.hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  max-width: 1280px;
-  margin: 0 auto;
-  height: 80vh; }
+  .hero .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 80vh; }
 
 .section-news {
   background-color: #ffffffa1; }

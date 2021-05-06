@@ -2,8 +2,6 @@
 
 <div class="hero">
     <div class="hero-wrapper">
-        <div class="first-row">
-        </div>
     </div>
 </div>
 

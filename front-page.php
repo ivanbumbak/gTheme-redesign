@@ -3,7 +3,6 @@
 <div class="hero">
     <div class="hero-wrapper">
         <div class="first-row">
-            <?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
         </div>
     </div>
 </div>

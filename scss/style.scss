@@ -66,7 +66,8 @@ header.home-header, header.page-header {
 }
 
 header.page-header {
-    position: initial;
+    position: absolute;
+    background-color: transparent;
 }
 
 .header-wrapper {
@@ -184,48 +185,49 @@ header.page-header {
 .section-service {
     background-color: $dark-background-color;
     padding: 50px 0;
-}
 
-.wrapper-service {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 25%;
-    height: 375px;
-    margin: 25px;
-
-    h1 {
-        font-size: 21px;
-        font-family: $heading-font;
-        color: $main-color-font;
+    .wrapper-service {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
-
-    i {
-        font-size: 3.5em;
-        font-family: $main-color-font;
-        padding-bottom: 10px;
-    }
-
-    p {
-        font-family: $main-font;
-        color: $main-color-font;
-        padding: 10px;
-    }
-
-    a {
-        font-family: $main-font;
-        border-bottom: 1px solid $dark-background-color;
-        @include unfade(ease-in);
-        &:hover {
-            border-bottom: 1px solid $link-color;
-            @include fade(ease-in);
+    
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 25%;
+        height: 375px;
+        margin: 25px;
+    
+        h1 {
+            font-size: 21px;
+            font-family: $heading-font;
+            color: $main-color-font;
+        }
+    
+        i {
+            font-size: 3.5em;
+            font-family: $main-color-font;
+            color: $service-icon-color;
+            padding-bottom: 10px;
+        }
+    
+        p {
+            font-family: $main-font;
+            color: $main-color-font;
+            padding: 10px;
+        }
+    
+        a {
+            font-family: $main-font;
+            border-bottom: 1px solid $dark-background-color;
+            @include unfade(ease-in);
+            &:hover {
+                border-bottom: 1px solid $link-color;
+                @include fade(ease-in);
+            }
         }
     }
 }
@@ -329,33 +331,29 @@ article.page-content {
     flex: 1;
     flex-direction: row-reverse;
     max-width: 100%;
-    background-color: $light-background-color;
-}
-
-/* Page About Us */
-.about-us {
-    width: 30%;
-    padding: 50px;
-    margin: 0 auto;
-
-    h2 {
-        font-size: 31px !important;
-        padding: 15px 0;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-}
-
-.about-us-background {
-    width: 45%;
-    height: 100%;
-    background-image: url('./img/city.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), $main-background-image;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Page About Us */
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 50px;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 31px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
 }
 
 /* Page Offer */
